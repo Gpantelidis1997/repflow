@@ -29,15 +29,15 @@
   "crons": [
     {
       "path": "/api/cron/founder-snapshot",
-      "schedule": "15 1 * * *"
+      "schedule": "0 8 * * *"
     },
     {
       "path": "/api/cron/autonomous-operations",
-      "schedule": "15 * * * *"
+      "schedule": "0 8 * * *"
     },
     {
       "path": "/api/cron/program-adaptation",
-      "schedule": "35 * * * *"
+      "schedule": "0 8 * * *"
     }
   ]
 }
