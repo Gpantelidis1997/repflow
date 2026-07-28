@@ -1,0 +1,5 @@
+'use client'
+import { useState } from 'react'
+import { createClient } from '@/lib/supabase/client'
+import { useRouter } from 'next/navigation'
+export default function Login(){const [email,setEmail]=useState('');const [password,setPassword]=useState('');const [error,setError]=useState('');const router=useRouter();async function submit(e:React.FormEvent){e.preventDefault();setError('');const {error}=await createClient().auth.signInWithPassword({email,password});if(error)return setError(error.message);router.push('/app/page');router.refresh()}return <main className="container" style={{maxWidth:520}}><div className="eyebrow">RepFlow</div><h1>Log in</h1><form className="card stack" onSubmit={submit}><input className="input" type="email" placeholder="Email" value={email} onChange={e=>setEmail(e.target.value)} required/><input className="input" type="password" placeholder="Password" value={password} onChange={e=>setPassword(e.target.value)} required/>{error&&<p style={{color:'var(--red)'}}>{error}</p>}<button className="btn btn-primary">Log in</button></form></main>}

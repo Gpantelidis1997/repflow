@@ -1,0 +1,2 @@
+import Link from 'next/link'
+export default function VerifyEmail(){return <main className="container" style={{maxWidth:620}}><div className="eyebrow">RepFlow Beta</div><section className="card stack"><h1>Check your email</h1><p>We sent you a secure verification link. Open it to activate your account and continue to your assessment.</p><p className="muted">The link may take a minute to arrive. Check your spam folder before requesting another email.</p><Link className="btn btn-primary" href="/login">Return to login</Link></section></main>}

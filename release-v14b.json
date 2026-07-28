@@ -1,0 +1,8 @@
+{
+  "release": "V14B",
+  "version": "1.0.0-rc.5",
+  "module": "Session Builder",
+  "engine": "session-builder-v1.0.0",
+  "migration": "015_session_builder.sql",
+  "quality_threshold": 85
+}

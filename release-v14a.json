@@ -1,0 +1,16 @@
+{
+  "release": "V14A",
+  "version": "1.0.0-rc.4",
+  "module": "Exercise Intelligence Foundation",
+  "migration": "014_exercise_intelligence_foundation.sql",
+  "new_routes": [
+    "/app/admin/exercise-intelligence"
+  ],
+  "new_tests": [
+    "tests/exercise-intelligence.test.ts"
+  ],
+  "limitations": [
+    "No unreviewed 1,000-exercise bulk import",
+    "Compatibility rows require seeding or computation in V14B"
+  ]
+}

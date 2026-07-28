@@ -1,0 +1,6 @@
+{
+  "release": "RepFlow Public MVP",
+  "version": "1.0.0-beta.1",
+  "scope": ["public landing page", "interactive onboarding", "athlete dashboard", "workout logger", "progression result", "local demo persistence"],
+  "demo_requires_backend": false
+}
