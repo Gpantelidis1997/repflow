@@ -3,7 +3,7 @@ import Stripe from 'stripe'
 export function stripeServer() {
   const key = process.env.STRIPE_SECRET_KEY
   if (!key) throw new Error('Stripe is not configured.')
-  return new Stripe(key, { apiVersion: '2024-12-18.acacia' })
+  return new Stripe(key, { apiVersion: '2025-02-24.acacia' })
 }
 
 export function stripeConfigured() {
